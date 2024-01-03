@@ -4,6 +4,9 @@
 
 const convertToBase2 = element => {
   // Your code here 
+  //console.log('0b'+parseInt(element.toString(2)));
+  if(element*2 == element + element) return '0b' + parseInt(element.toString(2));
+  else return '0b'+ parseInt(element, 16).toString(2);
 };
 
 /******************************************************************************/

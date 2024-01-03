@@ -4,6 +4,8 @@
 
 const convertToBase10 = str => {
   // Your code here 
+  if(str.charAt(1) == 'b') return parseInt(str.substring(2), 2);
+  else return parseInt(str.substring(2), 16);
 };
 
 /******************************************************************************/
