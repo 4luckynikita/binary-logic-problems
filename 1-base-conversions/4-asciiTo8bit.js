@@ -7,7 +7,14 @@ const addZeros = require('../utils/addZeros');
 /******************************************************************************/
 
 const asciiTo8bit = str => {
-  // Your code here 
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+
+    let int = str.charCodeAt([i])
+    
+    result += addZeros(int.toString(2), 8);
+  }
+  return result;
 };
 
 /******************************************************************************/
